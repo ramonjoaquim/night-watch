@@ -1,0 +1,108 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Google Search",
+    "line": 4,
+    "id": "google-search",
+    "tags": [
+      {
+        "name": "@google",
+        "line": 3
+      }
+    ],
+    "uri": "features\\google.feature",
+    "elements": [
+      {
+        "id": "google-search;searching-google",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Searching Google",
+        "tags": [
+          {
+            "name": "@google",
+            "line": 3
+          },
+          {
+            "name": "@search",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39617000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I open Google's search page",
+            "match": {
+              "location": "steps\\google.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20270000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the title is \"Google\"",
+            "match": {
+              "location": "steps\\google.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the Google search form exists",
+            "match": {
+              "location": "steps\\google.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
