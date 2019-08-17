@@ -4,7 +4,7 @@
   "description": "Autmation nightwathc with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
   },
   "author": "Ramon",
   "license": "ISC",
