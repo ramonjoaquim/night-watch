@@ -1,29 +1,29 @@
 [
   {
     "keyword": "Feature",
-    "name": "Google Search",
+    "name": "Login dns filter system",
     "line": 4,
-    "id": "google-search",
+    "id": "login-dns-filter-system",
     "tags": [
       {
-        "name": "@google",
+        "name": "@login",
         "line": 3
       }
     ],
-    "uri": "features\\google.feature",
+    "uri": "features\\login.feature",
     "elements": [
       {
-        "id": "google-search;searching-google",
+        "id": "login-dns-filter-system;singin-is-successfully",
         "keyword": "Scenario",
         "line": 7,
-        "name": "Searching Google",
+        "name": "SingIn is successfully",
         "tags": [
           {
-            "name": "@google",
+            "name": "@login",
             "line": 3
           },
           {
-            "name": "@search",
+            "name": "@LoginSuccessfully",
             "line": 6
           }
         ],
@@ -37,46 +37,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 39617000000
+              "duration": 5972000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "I open Google's search page",
+            "name": "I access the page \"https://dev-app.dnsfilter.com\"",
             "match": {
-              "location": "steps\\google.js:4"
+              "location": "steps\\login.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 20270000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "the title is \"Google\"",
-            "match": {
-              "location": "steps\\google.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 61000000
+              "duration": 11712000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "the Google search form exists",
+            "line": 10,
+            "name": "The title page is \"Dashboard | DNSFilter\"",
             "match": {
-              "location": "steps\\google.js:12"
+              "location": "steps\\login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 49000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I insert the login input \"heron+usuauto@dnsfilter.com\"",
+            "match": {
+              "location": "steps\\login.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I insert the password input \"*Usuauto2019\"",
+            "match": {
+              "location": "steps\\login.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click in button to SingIn",
+            "match": {
+              "location": "steps\\login.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should acces the page overview and see the all elements",
+            "match": {
+              "location": "steps\\login.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21327000000
             }
           },
           {
@@ -86,8 +125,7 @@
               "location": "cucumber.conf.js:38"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -98,7 +136,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 111000000
+              "duration": 200000000
             }
           }
         ]
