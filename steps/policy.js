@@ -39,7 +39,8 @@ When(/^I click in the button create$/, () => {
     .waitForElementVisible(pageElements.createButton)
     .click(pageElements.createButton)
     .useCss()
-    .waitForElementNotPresent(pageElements.disabledButton, 10000)
+    
+    
 });
 
 
