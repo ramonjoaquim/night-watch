@@ -10,7 +10,7 @@
         "line": 3
       }
     ],
-    "uri": "features\\login.feature",
+    "uri": "features/login.feature",
     "elements": [
       {
         "id": "login-dns-filter-system;singin-is-successfully",
@@ -37,7 +37,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5972000000
+              "duration": 4849000000
             }
           },
           {
@@ -46,11 +46,11 @@
             "line": 9,
             "name": "I access the page \"https://dev-app.dnsfilter.com\"",
             "match": {
-              "location": "steps\\login.js:4"
+              "location": "steps/login.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 11712000000
+              "duration": 6387000000
             }
           },
           {
@@ -59,11 +59,11 @@
             "line": 10,
             "name": "The title page is \"Dashboard | DNSFilter\"",
             "match": {
-              "location": "steps\\login.js:8"
+              "location": "steps/login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 30000000
             }
           },
           {
@@ -72,11 +72,11 @@
             "line": 11,
             "name": "I insert the login input \"heron+usuauto@dnsfilter.com\"",
             "match": {
-              "location": "steps\\login.js:12"
+              "location": "steps/login.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 923000000
+              "duration": 686000000
             }
           },
           {
@@ -85,11 +85,11 @@
             "line": 12,
             "name": "I insert the password input \"*Usuauto2019\"",
             "match": {
-              "location": "steps\\login.js:18"
+              "location": "steps/login.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 315000000
             }
           },
           {
@@ -98,11 +98,11 @@
             "line": 13,
             "name": "I click in button to SingIn",
             "match": {
-              "location": "steps\\login.js:24"
+              "location": "steps/login.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 328000000
+              "duration": 245000000
             }
           },
           {
@@ -111,11 +111,11 @@
             "line": 14,
             "name": "I should acces the page overview and see the all elements",
             "match": {
-              "location": "steps\\login.js:30"
+              "location": "steps/login.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 21327000000
+              "duration": 4897000000
             }
           },
           {
@@ -136,7 +136,208 @@
             },
             "result": {
               "status": "passed",
-              "duration": 200000000
+              "duration": 115000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    with a new user I add new Policy and verify if the new policy has present",
+    "keyword": "Feature",
+    "name": "add new Policy",
+    "line": 1,
+    "id": "add-new-policy",
+    "tags": [],
+    "uri": "features/policy.feature",
+    "elements": [
+      {
+        "id": "add-new-policy;add-new-policy",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Add new policy",
+        "tags": [
+          {
+            "name": "@newPolicy",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I access the page \"https://dev-app.dnsfilter.com\"",
+            "match": {
+              "location": "steps/login.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The title page is \"Dashboard | DNSFilter\"",
+            "match": {
+              "location": "steps/login.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I insert the login input \"heron+usuauto@dnsfilter.com\"",
+            "match": {
+              "location": "steps/login.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I insert the password input \"*Usuauto2019\"",
+            "match": {
+              "location": "steps/login.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click in button to SingIn",
+            "match": {
+              "location": "steps/login.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should acces the page overview and see the all elements",
+            "match": {
+              "location": "steps/login.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "access the page policies",
+            "match": {
+              "location": "steps/policy.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 821000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "click in button add",
+            "match": {
+              "location": "steps/policy.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I insert the name \"Policy auto 2019\"",
+            "match": {
+              "location": "steps/policy.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click in the button create",
+            "match": {
+              "location": "steps/policy.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the new policy \"Policy auto 2019\" has to be present in the list",
+            "match": {
+              "location": "steps/policy.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 603000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:38"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105000000
             }
           }
         ]
