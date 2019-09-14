@@ -31,6 +31,15 @@ Then(/^I should acces the page overview and see the all elements$/, () => {
   return client
     .waitForElementVisible('[data-test-id="button-menu-general"]',15000)
     .assert.elementPresent('[data-test-id="button-menu-general"]')
+    .element('css selector','[class="pushContentText"]', function (visivel){
+      if (visivel.status != -1){
+        this.waitForElementVisible('[id="pushActionRefuse"]', function (){
+          this.click('[id="pushActionRefuse"]');
+        })
+      }else{
+        console.log('ignorar erro acima my friend');
+      }
+    })
     .useXpath()
     .waitForElementVisible('//button[contains(.,"Security")]',15000)
     .assert.elementPresent('//button[contains(.,"Security")]')
