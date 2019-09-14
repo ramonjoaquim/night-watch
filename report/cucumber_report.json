@@ -1,30 +1,30 @@
 [
   {
     "keyword": "Feature",
-    "name": "Login dns filter system",
+    "name": "Verify invoice elements",
     "line": 4,
-    "id": "login-dns-filter-system",
+    "id": "verify-invoice-elements",
     "tags": [
       {
-        "name": "@login",
+        "name": "@invoice",
         "line": 3
       }
     ],
-    "uri": "features\\login.feature",
+    "uri": "features\\invoice.feature",
     "elements": [
       {
-        "id": "login-dns-filter-system;singin-is-successfully",
+        "id": "verify-invoice-elements;access-invoice-page-and-verify-elements",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "SingIn is successfully",
+        "line": 15,
+        "name": "Access invoice page and verify elements",
         "tags": [
           {
-            "name": "@login",
+            "name": "@invoice",
             "line": 3
           },
           {
-            "name": "@LoginSuccessfully",
-            "line": 6
+            "name": "@invoice",
+            "line": 14
           }
         ],
         "type": "scenario",
@@ -37,85 +37,124 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5972000000
+              "duration": 10789000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 7,
             "name": "I access the page \"https://dev-app.dnsfilter.com\"",
             "match": {
               "location": "steps\\login.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 11712000000
+              "duration": 14029000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 8,
             "name": "The title page is \"Dashboard | DNSFilter\"",
             "match": {
               "location": "steps\\login.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 171000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
-            "name": "I insert the login input \"heron+usuauto@dnsfilter.com\"",
+            "line": 9,
+            "name": "I insert the login input \"heron+usuauto04@dnsfilter.com\"",
             "match": {
               "location": "steps\\login.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 923000000
+              "duration": 2244000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
+            "line": 10,
             "name": "I insert the password input \"*Usuauto2019\"",
             "match": {
               "location": "steps\\login.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 753000000
+              "duration": 577000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 13,
+            "line": 11,
             "name": "I click in button to SingIn",
             "match": {
               "location": "steps\\login.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 328000000
+              "duration": 2612000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 12,
             "name": "I should acces the page overview and see the all elements",
             "match": {
               "location": "steps\\login.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 21327000000
+              "duration": 48326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I access the tab invoices",
+            "match": {
+              "location": "steps\\invoice.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23567000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I open a invoice \"8083\"",
+            "match": {
+              "location": "steps\\invoice.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "The invoices open wiht your elements",
+            "match": {
+              "location": "steps\\invoice.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8150000000
             }
           },
           {
@@ -125,7 +164,8 @@
               "location": "cucumber.conf.js:38"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -136,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 200000000
+              "duration": 438000000
             }
           }
         ]
